@@ -1,0 +1,121 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-image: url('weather.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    margin: 0;
+    
+}
+#app{
+    display: grid;
+    height:100vh;
+    width: 100%;
+    color: #343434;
+    grid-gap: 1em;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+
+}
+
+.headline {
+    align-items: center;
+    margin: 0 auto;
+    color: #6a4c39;
+    width: 35rem;
+}
+
+.holder{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 16px;
+}
+
+.entry{
+    justify-content: flex-start;
+    min-height: 155px;
+}
+
+
+
+label{
+    display:block;
+    font-size: 20px;
+}
+
+input{
+    display:block;
+    height: 60px;
+    margin-top: 7px;
+    width: 370px;
+    color: #343434;
+    font-size: 20px;
+    font-family: 'Oswald', sans-serif;
+}
+textarea{
+    color: #343435;
+    font-size: 20px;
+    width: 370px;
+    margin-top: 7px;
+    font-family: 'Oswald', sans-serif;
+
+
+}
+
+
+
+button{
+    background: #445;
+    color: #f0d43a;
+    font-size: 1.5rem;
+    font-weight: 700;
+    box-shadow: 7px 7px 15px 5px #888;
+    margin-top: 1rem;
+    margin-left: 7rem;
+    height: 50px;
+    width: 120px;
+    border-radius: 6px;
+    transition: all 0.3s ease-in;
+}
+button:hover {
+    cursor: pointer;
+    box-shadow: none;
+}
+h1{
+    margin: 0;
+    display: inline;
+    font-size: 2em;
+    font-weight: 900;
+}
+
+
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
+
+
+/* appropriate for all modern browsers*/
+
+::placeholder {                   /* Firefox-- Chrome-- Opera */ 
+    font-size: 1rem;
+} 
+::-ms-input-placeholder {         /*for  MicrosoftEdge */ 
+    font-size: 1rem;
+} 
+  
+:-ms-input-placeholder {           /* for Internet Explorer 10,11 */ 
+    font-size: 1rem;
+} 
+  
+
+
